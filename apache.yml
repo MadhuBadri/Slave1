@@ -9,7 +9,7 @@
       command: rm -rf /opt/tomcat8/webapps/myweb*
     - name: Copy the war file
       copy:
-        src: /var/lib/jenkins/workspace/jenkins-tomcat-deploy-dev/target/myweb.war
+        src: /var/lib/jenkins/workspace/jenkins-tomcat-deploy-dev-ansible/target/myweb.war
         dest: /opt/tomcat8/webapps/
     - name: Start Tomcat
       command: /opt/tomcat8/bin/startup.sh
